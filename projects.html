@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio Créatif</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@0.344.0/font/lucide.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="lucide-code-2"></i>
+                <span>Mathis Neyron</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À Propos</a>
+                <a href="projects.html" class="active">Projets</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="lucide-menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="container">
+            <h1 class="fade-in">Mes Projets</h1>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="htmlcss">html / css</button>
+                <button class="filter-btn" data-filter="fullstack"></button>
+            </div>
+
+            <div class="projects-grid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© <span id="year"></span> Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
